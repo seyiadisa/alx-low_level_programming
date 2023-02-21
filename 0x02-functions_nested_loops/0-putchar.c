@@ -1,5 +1,10 @@
 int _putchar(char c);
 
+/**
+  * main - the main function
+  *
+  * Return: 0 if program runs successfully
+  */
 int main(void)
 {
 		_putchar('_');
