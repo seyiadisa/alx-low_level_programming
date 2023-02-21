@@ -1,3 +1,5 @@
+int _putchar(char)
+
 /**
   * print_alphabet - prints all the letters of the alphabet
   * in lowercase
