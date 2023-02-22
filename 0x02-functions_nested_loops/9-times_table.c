@@ -17,31 +17,30 @@ void times_table(void)
 
 			if (col == 0)
 			{
-                                if (product < 10)
-                                {
-                                        _putchar(product + '0');
-                                }
-                                else
-                                {
-                                        _putchar(ten + '0');
-                                        _putchar(one + '0');
-                                }
-                                continue;
-                        }
+				if (product < 10)
+				{
+					_putchar(product + '0');
+				}
+				else
+				{
+					_putchar(ten + '0');
+					_putchar(one + '0');
+				}
+				continue;
+			}
+
+			_putchar(',');
+			_putchar(' ');
 
 			if (product < 10)
 			{
-				_putchar(',');
-				_putchar(' ');
 				_putchar(' ');
 				_putchar(product + '0');
 			}
 			else
 			{
-				_putchar(',');
-				_putchar(' ');
 				_putchar(ten + '0');
-                                _putchar(one + '0');
+				_putchar(one + '0');
 			}
 		}
 		_putchar('\n');
