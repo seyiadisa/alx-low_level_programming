@@ -8,13 +8,12 @@
   */
 char *leet(char *str)
 {
-	int j;
-	int i = 0;
+	int i, j;
 	int len = 0;
 	char letters[5] = {'a', 'e', 'o', 't', 'l'};
 	int encode[5] = {4, 3, 0, 7, 1};
 
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (j = 0; j < 5; j++)
 		{
@@ -24,7 +23,6 @@ char *leet(char *str)
 				str[i] = encode[j] + '0';
 			}
 		}
-		i++;
 	}
 
 	return (str);
