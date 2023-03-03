@@ -14,9 +14,6 @@ char *leet(char *str)
 	char letters[5] = {'a', 'e', 'o', 't', 'l'};
 	int encode[5] = {4, 3, 0, 7, 1};
 
-	while (str[len] != '\0')
-		len++;
-
 	while (str[i] != '\0')
 	{
 		for (j = 0; j < 5; j++)
