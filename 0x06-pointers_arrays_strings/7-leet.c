@@ -13,7 +13,7 @@ char *leet(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j < 5; j++)
+		for (j = 0; j < 8; j++)
 		{
 			if (str[i] == encode[j] ||
 					str[i] - 32 == encode[j])
