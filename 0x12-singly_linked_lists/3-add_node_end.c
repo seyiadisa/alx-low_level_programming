@@ -7,12 +7,15 @@
  * @str: string value of new list element
  *
  * Return: address of the new element or NULL if it failed
-*/
+ */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *node = (list_t *) malloc(sizeof(list_t));
+	list_t *node = (list_t *)malloc(sizeof(list_t));
 	list_t *ptr;
 	unsigned int len;
+
+	if (node == NULL)
+		return (NULL);
 
 	for (len = 0; str[len]; len++)
 		;

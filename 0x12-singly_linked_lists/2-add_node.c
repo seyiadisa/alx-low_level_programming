@@ -7,30 +7,22 @@
  * @str: string value of new list element
  *
  * Return: address of the new element or NULL if it failed
-*/
+ */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *node = (list_t *) malloc(sizeof(list_t));
-	list_t *ptr;
+	list_t *node = (list_t *)malloc(sizeof(list_t));
 	unsigned int len;
+
+	if (node == NULL)
+		return (NULL);
 
 	for (len = 0; str[len]; len++)
 		;
 
 	node->str = strdup(str);
 	node->len = len;
-	node->next = NULL;
-
-	if (*head == NULL)
-	{
-		*head = node;
-	}
-	else
-	{
-		ptr = *head;
-		*head = node;
-		(*head)->next = ptr;
-	}
+	node->next = *head;
+	*head = node;
 
 	return (node);
 }
