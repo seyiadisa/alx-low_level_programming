@@ -6,7 +6,7 @@
   *
   * Return: 1 if prime, 0 if not
   */
-int prime_checker(long int n)
+int prime_checker(long n)
 {
 	int i;
 	int is_prime = 1;
@@ -32,9 +32,9 @@ int prime_checker(long int n)
   */
 int main(void)
 {
-	long int num = 612852475143;
-	long int i = 1;
-	long int prime_factor = 0;
+	long num = 121298;/*612852475143;*/
+	long i = 1;
+	long prime_factor = 0;
 	int is_prime;
 
 	while ((i <= num / 2))
@@ -44,9 +44,10 @@ int main(void)
 		if ((is_prime == 1) && (num % i == 0))
 			prime_factor = i;
 
+		printf("%ld ", i);
 		i += 2;
 	}
 
-	printf("%lu\n", prime_factor);
+	printf("%ld\n", prime_factor);
 	return (0);
 }
