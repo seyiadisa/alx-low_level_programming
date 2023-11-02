@@ -35,5 +35,4 @@ void print_number(int n)
 
 		_putchar((temp % 10) + '0');
 	}
-	_putchar('\n');
 }
