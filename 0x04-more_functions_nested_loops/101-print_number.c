@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-  * print_number - function to print an integer
-  * @n: int to print
-  */
+ * print_number - function to print an integer
+ * @n: int to print
+ */
 void print_number(int n)
 {
 	int i, pow;
@@ -35,4 +35,5 @@ void print_number(int n)
 
 		_putchar((temp % 10) + '0');
 	}
+	_putchar('\n');
 }

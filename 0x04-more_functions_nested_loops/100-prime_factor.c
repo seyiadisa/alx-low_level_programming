@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
-  * prime_checker - checks if a num is prime
-  * @n: number to be checked
-  *
-  * Return: 1 if prime, 0 if not
-  */
+ * prime_checker - checks if a num is prime
+ * @n: number to be checked
+ *
+ * Return: 1 if prime, 0 if not
+ */
 int prime_checker(long n)
 {
 	int i;
@@ -26,13 +26,13 @@ int prime_checker(long n)
 	return (is_prime);
 }
 /**
-  * main - the program starts here
-  *
-  * Return: 0 if successful
-  */
+ * main - the program starts here
+ *
+ * Return: 0 if successful
+ */
 int main(void)
 {
-	long num = 121298;/*612852475143;*/
+	long num = 612852475143; /*612852475143;*/
 	long i = 1;
 	long prime_factor = 0;
 	int is_prime;
@@ -44,7 +44,6 @@ int main(void)
 		if ((is_prime == 1) && (num % i == 0))
 			prime_factor = i;
 
-		printf("%ld ", i);
 		i += 2;
 	}
 
