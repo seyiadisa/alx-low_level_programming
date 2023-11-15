@@ -5,7 +5,8 @@
  * @s: string to be scanned
  * @accept: substring
  *
- * Return: number of bytes in the initial segment of @s containing only bytes from @accept
+ * Return: number of bytes in the initial segment of @s
+ *	containing only bytes from @accept
  */
 unsigned int _strspn(char *s, char *accept)
 {
