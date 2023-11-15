@@ -1,1 +1,1 @@
-This folder contains my files for the ALX SE project: C - Even more pointers, arrays and strings
+# C - Even more pointers, arrays and strings
