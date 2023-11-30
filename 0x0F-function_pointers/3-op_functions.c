@@ -13,7 +13,7 @@ int op_add(int a, int b)
 }
 
 /**
- * op_add - returns the difference of @a and @b
+ * op_sub - returns the difference of @a and @b
  * @a: int
  * @b: int
  *
@@ -25,7 +25,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_add - returns the product of @a and @b
+ * op_mul - returns the product of @a and @b
  * @a: int
  * @b: int
  *
@@ -37,7 +37,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_add - returns the division of @a and @b
+ * op_div - returns the division of @a and @b
  * @a: int
  * @b: int
  *
@@ -49,7 +49,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_add - returns the remainder of the division of @a by @b
+ * op_mod - returns the remainder of the division of @a by @b
  * @a: int
  * @b: int
  *

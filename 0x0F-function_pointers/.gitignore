@@ -1,5 +1,6 @@
 .vscode
 *main*
 !3-main.c
+!100*
 _putchar.c
 calc
