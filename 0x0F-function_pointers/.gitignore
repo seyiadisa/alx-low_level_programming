@@ -1,0 +1,4 @@
+.vscode
+*main*
+!3-main.c
+_putchar.c
