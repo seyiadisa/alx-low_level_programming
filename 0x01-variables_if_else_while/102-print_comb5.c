@@ -22,7 +22,7 @@ int main(void)
 				{
 					if ((ix == jx) && (iy == jy))
 						continue;
-					if ((ix + iy) > (jx + jy))
+					if ((ix * 10 + iy) > (jx * 10 + jy))
 						continue;
 					if (ix > jx)
 						continue;
