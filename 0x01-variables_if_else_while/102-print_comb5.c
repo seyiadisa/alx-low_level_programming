@@ -32,6 +32,9 @@ int main(void)
 					putchar(jx + 48);
 					putchar(jy + 48);
 
+					if ((ix == 9) && (jy == 9) && (iy == 8))
+						break;
+
 					putchar(',');
 					putchar(' ');
 				}
