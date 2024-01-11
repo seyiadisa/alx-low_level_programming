@@ -24,7 +24,7 @@ int main(void)
 						continue;
 					if ((ix + iy) > (jx + jy))
 						continue;
-					if ((ix > jx) || (iy > jy))
+					if (ix > jx)
 						continue;
 					putchar(ix + 48);
 					putchar(iy + 48);
